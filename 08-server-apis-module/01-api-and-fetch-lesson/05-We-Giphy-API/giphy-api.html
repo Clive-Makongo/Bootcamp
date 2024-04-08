@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Giphy API</title>
+</head>
+
+<body>
+  <script>
+    // Example queryURL for Giphy API - API key MUST be included below
+    let apikey = "5541009e3ed0526a2a73b1c4ddb284b4"
+    let lat = 51.528438
+    let lon = -0.575448
+    var queryURL = "https://api.openweathermap.org/data/3.0/onecall?appid="+ apikey + "&lat=" + lat +"&lon=" + lon;
+    
+
+    fetch(queryURL)
+    .then(function(response) {
+      return response.json();
+    }).then(function(data) {
+      console.log(data);
+    });
+  </script>
+
+</body>
+
+</html>

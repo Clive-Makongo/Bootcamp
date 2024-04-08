@@ -1,0 +1,22 @@
+* {
+    margin: 15px;
+    font-family: sans-serif;
+}
+
+h1 {
+    color: hwb(256 0% 74%);
+}
+
+.pic {
+    border: 15px dotted #f7091c;
+}
+
+header, footer {
+    background-color: blue;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 10000px;
+}
